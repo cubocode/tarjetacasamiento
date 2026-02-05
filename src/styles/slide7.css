@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+
+.slide7-container {
+    width: 100vw;
+    max-width: 100vw;
+    margin: 0;
+    padding: 64px 0 32px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+  }
+  
+  .slide7-header {
+    text-align: center;
+    margin-bottom: 32px;
+    position: relative;
+  }
+  
+  .slide7-title {
+    font-size: 56px;
+    /* font-family: 'Amsterdam', serif; */
+    color: #222;
+    margin-bottom: 16px;
+    font-family: "Playwrite GB S", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  }
+  
+  .slide7-icon-top {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+  }
+  
+  .slide7-subtitle {
+    font-size: 22px;
+    color: #2d4669;
+    max-width: 700px;
+    margin: 0 auto 24px auto;
+    margin-top:5%;
+    text-align: center;
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+  .slide7-cards-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 48px;
+    width: 100%;
+    margin-bottom: 32px;
+    position: relative;
+  }
+  
+  .slide7-card {
+    flex: 1 1 0;
+    min-width: 220px;
+    max-width: 320px;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 12px;
+    position: relative;
+  }
+  
+  .slide7-card-icon {
+    font-size: 48px;
+    color: #b6c6d6;
+    margin-bottom: 12px;
+    min-height: 60px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  
+  .slide7-card-title {
+    font-size: 32px;
+    font-family: 'Montserrat', serif;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 8px;
+  }
+  
+  .slide7-card-desc {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+    .slide7-card::before, .slide7-card::after {
+    display: none !important;
+  }
+  
+  .slide7-card:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 1px;
+    height: calc(100% - 40px);
+    background: #b6c6d6;
+    opacity: 0.7;
+  }
+  
+  .slide7-btn-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .slide7-btn {
+    font-size: 18px;
+    padding: 12px 36px;
+    border: 2px solid #b6c6d6;
+    background: transparent;
+    color: #1c3559;
+    border-radius: 8px;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+  }
+  .slide7-btn:hover {
+    background: #2d4669;
+    color: #fff;
+  }
+  
+  @media (max-width: 900px) {
+    .slide7-cards-row {
+      gap: 24px;
+    }
+    .slide7-title {
+      font-size: 40px;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .slide7-cards-row {
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+    }
+    .slide7-card {
+      max-width: 90vw;
+    }
+    .slide7-subtitle {
+      font-size: 18px;
+      padding-left: 12px;
+      padding-right: 12px;
+      max-width: 98vw;
+      margin-top: 16px;
+    }
+  }
+
+.cbu-text {
+  display: block;
+  margin-top: 20px;
+  padding: 16px 24px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid #324b6d;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #324b6d;
+  text-align: center;
+  letter-spacing: 2px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 0.5s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .cbu-text {
+    font-size: 16px;
+    padding: 12px 16px;
+    margin-top: 16px;
+  }
+} 
